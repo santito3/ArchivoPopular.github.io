@@ -6,34 +6,33 @@
     <title>Archivo Popular</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: black;
             margin: 0;
             padding: 0;
         }
         header {
-            background: #333;
-            color: #fff;
+            background-color: black;
+            color: white;
             padding: 1rem 0;
             text-align: center;
         }
-        header img {
-            max-width: 100px;
-            height: auto;
+        footer {
+            background-color: black;
+            color: red;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        header img {
+            max-width: 300px; /* Ajusta el tamaño del logo según sea necesario */
+            height: auto;
         }
     </style>
 </head>
@@ -41,7 +40,6 @@
     <header>
         <div class="container">
             <img src="logo.png" alt="Logo de Archivo Popular">
-            <h1>Archivo Popular</h1>
         </div>
     </header>
     <div class="container">
