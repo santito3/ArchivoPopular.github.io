@@ -24,15 +24,14 @@
             color: red;
             text-align: center;
             padding: 1rem 0;
-            position: fixed;
             width: 100%;
-            bottom: 0;
-            border-bottom: 5px solid red; /* Borde rojo en la parte inferior del pie de página */
+            border-top: 1px solid white; /* Añadimos un borde blanco en la parte superior del pie de página */
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            margin-bottom: 100px; /* Agregamos un espacio adicional en la parte inferior del contenido */
         }
         header img {
             max-width: 300px; /* Ajusta el tamaño del logo según sea necesario */
@@ -106,7 +105,9 @@
         </section>
     </div>
     <footer>
-        <p>Archivo Popular &copy; 2024</p>
+        <div class="container">
+            <p>Archivo Popular &copy; 2024</p>
+        </div>
     </footer>
 </body>
 </html>
