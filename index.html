@@ -9,6 +9,8 @@
             background-color: black;
             margin: 0;
             padding: 0;
+            color: white;
+            font-family: Arial, sans-serif;
         }
         header {
             background-color: black;
@@ -36,6 +38,27 @@
             max-width: 300px; /* Ajusta el tamaño del logo según sea necesario */
             height: auto;
         }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: red;
+        }
+        #nosotros {
+            background-color: #f9f9f9; /* Cambia el color de fondo según tu preferencia */
+            padding: 50px 0; /* Agrega espaciado interno arriba y abajo */
+        }
     </style>
 </head>
 <body>
@@ -44,9 +67,39 @@
             <img src="logo.png" alt="Logo de Archivo Popular">
         </div>
     </header>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#ultimas-noticias">Últimas Noticias</a></li>
+            <li><a href="#nosotros">Nosotros</a></li> <!-- Nuevo enlace para la página "Acerca de Nosotros" -->
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <h2>Bienvenidos a Archivo Popular</h2>
-        <p>Este es un sitio web de noticias...</p>
+        <section id="inicio">
+            <h2>Bienvenidos a Archivo Popular</h2>
+            <p>Este es un sitio web de noticias...</p>
+        </section>
+        <section id="ultimas-noticias">
+            <h2>Últimas Noticias</h2>
+            <p>Aquí puedes poner las últimas noticias...</p>
+        </section>
+        <section id="nosotros">
+            <h2>Acerca de Nosotros</h2>
+            <p>
+                Archivo Popular es mucho más que un simple medio de noticias. Somos una voz comprometida con la justicia social, la equidad y la transparencia. Fundado el 28 de octubre de 2023, en Uruguay, nos enorgullece ofrecer una plataforma independiente y gratuita para informar, educar y empoderar a nuestra comunidad.
+
+                Nuestra misión es proporcionar información precisa, contextualizada y relevante sobre los eventos y temas que afectan a nuestra sociedad. Creemos en el poder de la información para generar un cambio positivo y promover la participación ciudadana en los asuntos que nos conciernen a todos.
+
+                En Archivo Popular, nos esforzamos por ir más allá de las noticias superficiales y proporcionar un análisis profundo y reflexivo de los problemas que enfrentamos como sociedad. Priorizamos la diversidad de perspectivas y nos comprometemos a amplificar las voces marginadas y subrepresentadas en nuestro medio.
+
+                Nuestro equipo editorial está formado por periodistas comprometidos y apasionados que comparten los valores fundamentales de integridad, honestidad y ética profesional. Nos esforzamos por mantener altos estándares de calidad en todo nuestro trabajo, desde la investigación exhaustiva hasta la presentación de noticias imparciales y objetivas.
+
+                Valoramos profundamente la participación y el compromiso de nuestra audiencia. Nos esforzamos por construir una comunidad inclusiva donde todas las voces sean escuchadas y respetadas. Creemos en el diálogo constructivo y en el intercambio de ideas como medios para avanzar hacia un futuro más justo y equitativo para todos.
+
+                Gracias por ser parte de nuestra comunidad y por apoyar nuestro trabajo. Juntos, podemos hacer una diferencia y construir un mundo mejor para las generaciones futuras.
+            </p>
+        </section>
     </div>
     <footer>
         <p>Archivo Popular &copy; 2024</p>
