@@ -6,7 +6,7 @@
     <title>Archivo Popular</title>
     <style>
         body {
-            background-color: black;
+            background: linear-gradient(45deg, #000000, #333333); /* Fondo con degradado */
             margin: 0;
             padding: 0;
             color: white;
@@ -42,6 +42,7 @@
             padding: 0;
             margin: 0;
             text-align: center;
+            margin-top: 20px; /* Ajustamos el margen superior del menú de navegación */
         }
         nav ul li {
             display: inline;
@@ -50,12 +51,13 @@
         nav ul li a {
             color: white;
             text-decoration: none;
+            transition: color 0.3s ease; /* Agregamos una transición de color suave */
         }
         nav ul li a:hover {
             color: red;
         }
         #nosotros {
-            background-color: black; /* Cambia el color de fondo según tu preferencia */
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
             padding: 50px 0; /* Agrega espaciado interno arriba y abajo */
         }
         #nosotros h2,
@@ -92,7 +94,7 @@
     </nav>
     <div class="container">
         <section id="inicio">
-            <h2>Bienvenidos a Archivo Popular</h2>
+            <h2 style="margin-bottom: 20px;">Bienvenidos a Archivo Popular</h2> <!-- Ajustamos el margen inferior del título -->
             <p>Este es un sitio web de noticias...</p>
         </section>
         <section id="ultimas-noticias">
@@ -110,9 +112,7 @@
 
                 Nuestro equipo editorial está formado por periodistas comprometidos y apasionados que comparten los valores fundamentales de integridad, honestidad y ética profesional. Nos esforzamos por mantener altos estándares de calidad en todo nuestro trabajo, desde la investigación exhaustiva hasta la presentación de noticias imparciales y objetivas.
 
-                Valoramos profundamente la participación y el compromiso de nuestra audiencia. Nos esforzamos por construir una comunidad inclusiva donde todas las voces sean escuchadas y respetadas. Creemos en el diálogo constructivo y en el intercambio de ideas como medios para avanzar hacia un futuro más justo y equitativo para todos.
-
-                Gracias por ser parte de nuestra comunidad y por apoyar nuestro trabajo. Juntos, podemos hacer una diferencia y construir un mundo mejor para las generaciones futuras.
+                Valoramos profundamente la participación y el compromiso de nuestra audiencia.
             </p>
         </section>
         <section id="contacto">
@@ -125,9 +125,7 @@
         </section>
     </div>
     <footer>
-        <div class="container">
-            <p>Archivo Popular &copy; 2024</p>
-        </div>
+        <p>Archivo Popular © 2024</p>
     </footer>
 </body>
 </html>
