@@ -6,10 +6,10 @@
     <title>Archivo Popular</title>
     <style>
         body {
-            background: linear-gradient(45deg, #000000, #333333); /* Fondo con degradado */
+            background-color: white; /* Fondo blanco */
             margin: 0;
             padding: 0;
-            color: white;
+            color: black; /* Texto en negro */
             font-family: Arial, sans-serif;
         }
         header {
@@ -36,6 +36,25 @@
         header img {
             max-width: 300px; /* Ajusta el tamaño del logo según sea necesario */
             height: auto;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            margin-top: 20px; /* Ajustamos el margen superior del menú de navegación */
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Agregamos una transición de color suave */
+        }
+        nav ul li a:hover {
+            color: red;
         }
         #nosotros {
             background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
@@ -64,10 +83,18 @@
         <div class="container">
             <img src="logo.png" alt="Logo de Archivo Popular">
         </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#ultimas-noticias">Últimas Noticias</a></li>
+                <li><a href="#nosotros">Nosotros</a></li> <!-- Nuevo enlace para la página "Acerca de Nosotros" -->
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
         <section id="inicio">
-            <h2 style="margin-bottom: 20px;">Bienvenidos a Archivo Popular</h2> <!-- Ajustamos el margen inferior del título -->
+            <h2 style="margin-bottom: 20px;">Inicio</h2> <!-- Ajustamos el margen inferior del título -->
             <p>Este es un sitio web de noticias...</p>
         </section>
         <section id="ultimas-noticias">
@@ -75,7 +102,7 @@
             <p>Aquí puedes poner las últimas noticias...</p>
         </section>
         <section id="nosotros">
-            <h2>Acerca de Nosotros</h2>
+            <h2>Nosotros</h2>
             <p>
                 Archivo Popular es mucho más que un simple medio de noticias. Somos una voz comprometida con la justicia social, la equidad y la transparencia. Fundado el 28 de octubre de 2023, en Uruguay, nos enorgullece ofrecer una plataforma independiente y gratuita para informar, educar y empoderar a nuestra comunidad.
 
